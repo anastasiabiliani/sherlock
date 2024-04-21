@@ -643,6 +643,16 @@ def main():
         help="Include checking of NSFW sites from default list.",
     )
 
+    parser.add_argument(
+        "--type",
+        "-ty",
+        action="store",
+        help= "Select the type of sites to be displayed",
+        metavar="Type of sites",
+        required=False,
+        type=str
+    )
+
     args = parser.parse_args()
 
     # If the user presses CTRL-C, exit gracefully without throwing errors
