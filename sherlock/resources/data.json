@@ -2019,12 +2019,12 @@
     "urlProbe": "https://m.twitch.tv/{}",
     "username_claimed": "jenny"
   },
-  "Twitter": {
+  "Twitter/X": {
     "errorMsg": "<div class=\"error-panel\"><span>User ",
     "errorType": "message",
     "regexCheck": "^[a-zA-Z0-9_]{1,15}$",
-    "url": "https://twitter.com/{}",
-    "urlMain": "https://twitter.com/",
+    "url": "https://x.com/%7B%7D",
+    "urlMain": "https://x.com/",
     "urlProbe": "https://nitter.net/{}",
     "username_claimed": "blue"
   },
