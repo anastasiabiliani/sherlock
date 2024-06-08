@@ -39,6 +39,7 @@
   "APClips": {
     "errorMsg": "Amateur Porn Content Creators",
     "errorType": "message",
+    "type":"Content Creation",
     "isNSFW": true,
     "url": "https://apclips.com/{}",
     "urlMain": "https://apclips.com/",
@@ -46,12 +47,14 @@
   },
   "About.me": {
     "errorType": "status_code",
+    "type": "Professional Networking",
     "url": "https://about.me/{}",
     "urlMain": "https://about.me/",
     "username_claimed": "blue"
   },
   "Academia.edu": {
     "errorType": "status_code",
+    "type": "Research",
     "regexCheck": "^[^.]*$",
     "url": "https://independent.academia.edu/{}",
     "urlMain": "https://www.academia.edu/",
@@ -60,6 +63,7 @@
   "AdmireMe.Vip": {
     "errorMsg": "Page Not Found",
     "errorType": "message",
+    "type":"Content Creation",
     "isNSFW": true,
     "url": "https://admireme.vip/{}",
     "urlMain": "https://admireme.vip/",
@@ -68,6 +72,7 @@
   "Air Pilot Life": {
     "errorMsg": "Oops! That page doesn\u2019t exist or is private",
     "errorType": "message",
+    "type":"Forum",
     "url": "https://airlinepilot.life/u/{}",
     "urlMain": "https://airlinepilot.life/",
     "username_claimed": "chris"
