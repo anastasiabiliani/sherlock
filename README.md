@@ -96,6 +96,13 @@ To search for more than one user:
 python3 sherlock user1 user2 user3
 ```
 
+To search for only one user by type:
+```
+python3 sherlock user123 --type type --local
+```
+
+Type examples: music, psychology, shopping, socials, forum
+
 Accounts found will be stored in an individual text file with the corresponding username (e.g ```user123.txt```).
 
 ## Anaconda (Windows) Notes
