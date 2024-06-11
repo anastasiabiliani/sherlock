@@ -24,6 +24,7 @@ from torrequest import TorRequest
 from result import QueryStatus
 from result import QueryResult
 from notify import QueryNotifyPrint
+from notify import QueryNotify
 from sites import SitesInformation
 from colorama import init
 from argparse import ArgumentTypeError
@@ -727,12 +728,17 @@ def main():
     if args.type:
         sites.remove_all_except_type(args.type)
 
-    if len(sites.sites)== 0:
-        print("Websites not found for this type")
-        sys.exit(1)
-    
-    
-   
+        if len(sites.sites)== 0:
+            msg= QueryNotifyPrint(QueryNotify(str))
+            all_usernames = []
+            for username in args.username:
+                all_usernames.append(username)
+            for username in all_usernames:
+                msg.start(username)
+                print("Websites not found for this type")
+                print('\r')
+                msg.finish()
+            sys.exit(1)
 
     # Create original dictionary from SitesInformation() object.
     # Eventually, the rest of the code will be updated to use the new object
