@@ -9,7 +9,7 @@ import secrets
 
 class SiteInformation:
     def __init__(self, name, url_home, url_username_format, username_claimed,
-                information, is_nsfw, username_unclaimed=secrets.token_urlsafe(10)):
+                information, is_nsfw, username_unclaimed=secrets.token_urlsafe(10),type = None):
         """Create Site Information Object.
 
         Contains information about a specific website.
@@ -42,6 +42,7 @@ class SiteInformation:
                                          but it is only recorded in this
                                          object for future use.
         is_nsfw                -- Boolean indicating if site is Not Safe For Work.
+        type                   -- String of websites type
 
         Return Value:
         Nothing.
@@ -55,6 +56,9 @@ class SiteInformation:
         self.username_unclaimed = secrets.token_urlsafe(32)
         self.information = information
         self.is_nsfw  = is_nsfw
+        self.type = type
+
+        
 
         return
 
@@ -165,9 +169,9 @@ class SitesInformation:
                                     site_data[site_name]["url"],
                                     site_data[site_name]["username_claimed"],
                                     site_data[site_name],
-                                    site_data[site_name].get("isNSFW",False)
-
-                                    )
+                                    site_data[site_name].get("isNSFW",False),
+                                    type = site_data[site_name].get("type", None)
+                                 )
             except KeyError as error:
                 raise ValueError(
                     f"Problem parsing json contents at '{data_file_path}':  Missing attribute {error}."
@@ -188,6 +192,25 @@ class SitesInformation:
         sites = {}
         for site in self.sites:
             if self.sites[site].is_nsfw:
+                continue
+            sites[site] = self.sites[site]  
+        self.sites =  sites
+
+    def remove_all_except_type(self, type):
+        """
+        Filter the websites according to the given type
+
+        Keyword Arguments:
+        self                   -- This object.
+        type                   -- String of websites type
+
+        Return Value:
+        None
+
+        """
+        sites = {}
+        for site in self.sites:
+            if self.sites[site].type != type:
                 continue
             sites[site] = self.sites[site]  
         self.sites =  sites

@@ -654,7 +654,7 @@ def main():
     )
 
     args = parser.parse_args()
-
+   
     # If the user presses CTRL-C, exit gracefully without throwing errors
     signal.signal(signal.SIGINT, handler)
 
@@ -723,6 +723,16 @@ def main():
 
     if not args.nsfw:
         sites.remove_nsfw_sites()
+
+    if args.type:
+        sites.remove_all_except_type(args.type)
+
+    if len(sites.sites)== 0:
+        print("Websites not found for this type")
+        sys.exit(1)
+    
+    
+   
 
     # Create original dictionary from SitesInformation() object.
     # Eventually, the rest of the code will be updated to use the new object
