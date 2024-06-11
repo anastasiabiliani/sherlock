@@ -4,6 +4,9 @@ This module contains various tests.
 """
 from tests.base import SherlockBaseTest
 import exrex
+from sites import SitesInformation
+import os 
+import os.path
 
 
 class SherlockDetectTests(SherlockBaseTest):
@@ -120,6 +123,30 @@ class SherlockDetectTests(SherlockBaseTest):
         self.username_check([valid_username], [site], exist_check=False)
 
         return
+    
+
+    def test_remove_all_except_type(self):
+        """Test Remove All Websites Except the ones with the Specified Type.
+
+        This test ensures that the SitesInformation object can filter out
+        all site entries except those of a specified type (e.g.music).
+        Keyword Arguments:
+        self                   -- This object.
+
+        Return Value:
+        Nothing.
+        Will trigger an assert if detection mechanism did not work as expected.
+        """
+        sites = SitesInformation(data_file_path=os.path.join(os.path.dirname(__file__), "../resources/data.json"))
+        # Remove all site entries except those of the specified type ("music")
+        sites.remove_all_except_type("music")
+        # Verify that this site is in the filtered list
+        self.assertIn( "8tracks", sites.sites)
+        # Verify that this site is not on the filtered list
+        self.assertNotIn("2Dimensions", sites.sites)
+
+        return
+
 
 
 class SherlockSiteCoverageTests(SherlockBaseTest):
