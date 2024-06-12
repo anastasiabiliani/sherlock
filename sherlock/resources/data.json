@@ -39,7 +39,7 @@
   "APClips": {
     "errorMsg": "Amateur Porn Content Creators",
     "errorType": "message",
-    "type":"Content Creation",
+    "type":"content_creation",
     "isNSFW": true,
     "url": "https://apclips.com/{}",
     "urlMain": "https://apclips.com/",
@@ -47,14 +47,14 @@
   },
   "About.me": {
     "errorType": "status_code",
-    "type": "Professional Networking",
+    "type": "professional_networking",
     "url": "https://about.me/{}",
     "urlMain": "https://about.me/",
     "username_claimed": "blue"
   },
   "Academia.edu": {
     "errorType": "status_code",
-    "type": "Research",
+    "type": "research",
     "regexCheck": "^[^.]*$",
     "url": "https://independent.academia.edu/{}",
     "urlMain": "https://www.academia.edu/",
@@ -63,7 +63,7 @@
   "AdmireMe.Vip": {
     "errorMsg": "Page Not Found",
     "errorType": "message",
-    "type":"Content Creation",
+    "type":"content_creation",
     "isNSFW": true,
     "url": "https://admireme.vip/{}",
     "urlMain": "https://admireme.vip/",
@@ -72,19 +72,21 @@
   "Air Pilot Life": {
     "errorMsg": "Oops! That page doesn\u2019t exist or is private",
     "errorType": "message",
-    "type":"Forum",
+    "type":"forum",
     "url": "https://airlinepilot.life/u/{}",
     "urlMain": "https://airlinepilot.life/",
     "username_claimed": "chris"
   },
   "Airbit": {
     "errorType": "status_code",
+    "type" : "music",
     "url": "https://airbit.com/{}",
     "urlMain": "https://airbit.com/",
     "username_claimed": "airbit"
   },
   "Airliners": {
     "errorType": "status_code",
+    "type":"forum",
     "url": "https://www.airliners.net/user/{}/profile/photos",
     "urlMain": "https://www.airliners.net/",
     "username_claimed": "yushinlin"
@@ -98,6 +100,7 @@
   "All Things Worn": {
     "errorMsg": "Sell Used Panties",
     "errorType": "message",
+    "type":"fasion",
     "isNSFW": true,
     "url": "https://www.allthingsworn.com/profile/{}",
     "urlMain": "https://www.allthingsworn.com",
@@ -119,6 +122,7 @@
   },
   "Anilist": {
     "errorType": "status_code",
+    "type": "anime",
     "regexCheck": "^[A-Za-z0-9]{2,20}$",
     "request_method": "POST",
     "request_payload": {
@@ -134,6 +138,7 @@
   },
   "Apple Developer": {
     "errorType": "status_code",
+    "type": "technology",
     "url": "https://developer.apple.com/forums/profile/{}",
     "urlMain": "https://developer.apple.com",
     "username_claimed": "lio24d"
@@ -141,12 +146,14 @@
   "Apple Discussions": {
     "errorMsg": "The page you tried was not found. You may have used an outdated link or may have typed the address (URL) incorrectly.",
     "errorType": "message",
+    "type": "technology",
     "url": "https://discussions.apple.com/profile/{}",
     "urlMain": "https://discussions.apple.com",
     "username_claimed": "jason"
   },
   "Archive of Our Own": {
     "errorType": "status_code",
+    "type": "fun_clubs",
     "url": "https://archiveofourown.org/users/{}",
     "urlMain": "https://archiveofourown.org/",
     "username_claimed": "test"
@@ -154,24 +161,28 @@
   "Archive.org": {
     "errorMsg": "cannot find account",
     "errorType": "message",
+    "type": "literature",
     "url": "https://archive.org/details/@{}",
     "urlMain": "https://archive.org",
     "username_claimed": "blue"
   },
   "ArtStation": {
     "errorType": "status_code",
+    "type": "art",
     "url": "https://www.artstation.com/{}",
     "urlMain": "https://www.artstation.com/",
     "username_claimed": "Blue"
   },
   "Asciinema": {
     "errorType": "status_code",
+    "type": "technology",
     "url": "https://asciinema.org/~{}",
     "urlMain": "https://asciinema.org",
     "username_claimed": "red"
   },
   "Ask Fedora": {
     "errorType": "status_code",
+    "type": "technology",
     "url": "https://ask.fedoraproject.org/u/{}",
     "urlMain": "https://ask.fedoraproject.org/",
     "username_claimed": "red"
@@ -179,6 +190,7 @@
   "AskFM": {
     "errorMsg": "Well, apparently not anymore.",
     "errorType": "message",
+    "type": "socials",
     "regexCheck": "^[a-zA-Z0-9_]{3,40}$",
     "url": "https://ask.fm/{}",
     "urlMain": "https://ask.fm/",
@@ -186,6 +198,7 @@
   },
   "Audiojungle": {
     "errorType": "status_code",
+    "type": "music",
     "regexCheck": "^[a-zA-Z0-9_]+$",
     "url": "https://audiojungle.net/user/{}",
     "urlMain": "https://audiojungle.net/",
@@ -193,6 +206,7 @@
   },
   "Autofrage": {
     "errorType": "status_code",
+    "type": "vehicles",
     "url": "https://www.autofrage.net/nutzer/{}",
     "urlMain": "https://www.autofrage.net/",
     "username_claimed": "autofrage"
@@ -200,12 +214,14 @@
   "Avizo": {
     "errorType": "response_url",
     "errorUrl": "https://www.avizo.cz/",
+    "type": "technology",
     "url": "https://www.avizo.cz/{}/",
     "urlMain": "https://www.avizo.cz/",
     "username_claimed": "blue"
   },
   "BLIP.fm": {
     "errorType": "status_code",
+    "type" : "music",
     "regexCheck": "^[a-zA-Z0-9_]{1,30}$",
     "url": "https://blip.fm/{}",
     "urlMain": "https://blip.fm/",
@@ -214,6 +230,7 @@
   "BOOTH": {
     "errorType": "response_url",
     "errorUrl": "https://booth.pm/",
+    "type":"art",
     "regexCheck": "^[a-zA-Z0-9@_-]$",
     "url": "https://{}.booth.pm/",
     "urlMain": "https://booth.pm/",
@@ -221,6 +238,7 @@
   },
   "Bandcamp": {
     "errorType": "status_code",
+    "type":"music",
     "url": "https://www.bandcamp.com/{}",
     "urlMain": "https://www.bandcamp.com/",
     "username_claimed": "blue"
@@ -228,12 +246,14 @@
   "Bazar.cz": {
     "errorType": "response_url",
     "errorUrl": "https://www.bazar.cz/error404.aspx",
+    "type": "shoping",
     "url": "https://www.bazar.cz/{}/",
     "urlMain": "https://www.bazar.cz/",
     "username_claimed": "pianina"
   },
   "Behance": {
     "errorType": "status_code",
+    "type": "art",
     "url": "https://www.behance.net/{}",
     "urlMain": "https://www.behance.net/",
     "username_claimed": "blue"
@@ -246,18 +266,21 @@
   },
   "BiggerPockets": {
     "errorType": "status_code",
+    "type":"real_estate",
     "url": "https://www.biggerpockets.com/users/{}",
     "urlMain": "https://www.biggerpockets.com/",
     "username_claimed": "blue"
   },
   "Bikemap": {
     "errorType": "status_code",
+    "type": "camping",
     "url": "https://www.bikemap.net/en/u/{}/routes/created/",
     "urlMain": "https://www.bikemap.net/",
     "username_claimed": "bikemap"
   },
   "BioHacking": {
     "errorType": "status_code",
+    "type": "technology",
     "url": "https://forum.dangerousthings.com/u/{}",
     "urlMain": "https://forum.dangerousthings.com/",
     "username_claimed": "blue"
@@ -333,6 +356,7 @@
   "CGTrader": {
     "errorMsg": "3D models for CG digital design and artwork",
     "errorType": "message",
+    "type":"art",
     "url": "https://www.cgtrader.com/{}",
     "urlMain": "https://www.cgtrader.com",
     "username_claimed": "blue"
@@ -340,6 +364,7 @@
   "CNET": {
     "errorMsg": "null null - CNET",
     "errorType": "message",
+    "type":"news",
     "url": "https://www.cnet.com/profiles/{}/",
     "urlMain": "https://www.cnet.com/",
     "username_claimed": "elliottcnet"
@@ -440,6 +465,7 @@
   },
   "Clubhouse": {
     "errorType": "status_code",
+    "type": "socials",
     "url": "https://www.clubhouse.com/@{}",
     "urlMain": "https://www.clubhouse.com",
     "username_claimed": "waniathar"
@@ -454,6 +480,7 @@
   "Codecademy": {
     "errorMsg": "This profile could not be found",
     "errorType": "message",
+    "type": "technology",
     "url": "https://www.codecademy.com/profiles/{}",
     "urlMain": "https://www.codecademy.com/",
     "username_claimed": "blue"
@@ -514,6 +541,7 @@
   "Contently": {
     "errorMsg": "<title>Leading Content Marketing Platform | Contently</title>",
     "errorType": "message",
+    "type": "content_creation",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
     "url": "https://{}.contently.com/",
     "urlMain": "https://contently.com/",
@@ -666,6 +694,7 @@
   "Euw": {
     "errorMsg": "This summoner is not registered at OP.GG. Please check spelling.",
     "errorType": "message",
+    "type":"games",
     "url": "https://euw.op.gg/summoner/userName={}",
     "urlMain": "https://euw.op.gg/",
     "username_claimed": "blue"
@@ -821,6 +850,7 @@
   "GeeksforGeeks": {
     "errorMsg": "<title>Login GeeksforGeeks</title>",
     "errorType": "message",
+    "type": "technology",
     "url": "https://auth.geeksforgeeks.org/user/{}",
     "urlMain": "https://www.geeksforgeeks.org/",
     "username_claimed": "adam"
@@ -871,6 +901,7 @@
   "GitHub": {
     "errorType": "status_code",
     "regexCheck": "^[a-zA-Z0-9](?:[a-zA-Z0-9]|-(?=[a-zA-Z0-9])){0,38}$",
+    "type":"technology",
     "url": "https://www.github.com/{}",
     "urlMain": "https://www.github.com/",
     "username_claimed": "blue"
@@ -939,6 +970,7 @@
   "HEXRPG": {
     "errorMsg": "Error : User ",
     "errorType": "message",
+    "type":"fun_clubs",
     "regexCheck": "^[a-zA-Z0-9_ ]{3,20}$",
     "url": "https://www.hexrpg.com/userinfo/{}",
     "urlMain": "https://www.hexrpg.com/",
@@ -1222,6 +1254,7 @@
   },
   "Linktree": {
     "errorType": "status_code",
+    "type":"socials",
     "url": "https://linktr.ee/{}",
     "urlMain": "https://linktr.ee/",
     "username_claimed": "anne"
@@ -1365,6 +1398,7 @@
   "NationStates Nation": {
     "errorMsg": "Was this your nation? It may have ceased to exist due to inactivity, but can rise again!",
     "errorType": "message",
+    "tpye":"games",
     "url": "https://nationstates.net/nation={}",
     "urlMain": "https://nationstates.net",
     "username_claimed": "the_holy_principality_of_saint_mark"
@@ -1372,6 +1406,7 @@
   "NationStates Region": {
     "errorMsg": "does not exist.",
     "errorType": "message",
+    "type":"games",
     "url": "https://nationstates.net/region={}",
     "urlMain": "https://nationstates.net",
     "username_claimed": "the_west_pacific"
@@ -1425,6 +1460,7 @@
   "NitroType": {
     "errorMsg": "<title>Nitro Type | Competitive Typing Game | Race Your Friends</title>",
     "errorType": "message",
+    "type":"games",
     "url": "https://www.nitrotype.com/racer/{}",
     "urlMain": "https://www.nitrotype.com/",
     "username_claimed": "jianclash"
@@ -2057,6 +2093,7 @@
   },
   "VSCO": {
     "errorType": "status_code",
+    "type":"socials",
     "url": "https://vsco.co/{}",
     "urlMain": "https://vsco.co/",
     "username_claimed": "blue"
@@ -2247,6 +2284,7 @@
   "Zhihu": {
     "errorMsg": "404",
     "errorType": "message",
+    "type":"content_creation",
     "url": "https://www.zhihu.com/people/{}",
     "urlMain": "https://www.zhihu.com/",
     "username_claimed": "blue"
