@@ -730,10 +730,7 @@ def main():
 
         if len(sites.sites)== 0:
             msg= QueryNotifyPrint(QueryNotify(str))
-            all_usernames = []
             for username in args.username:
-                all_usernames.append(username)
-            for username in all_usernames:
                 msg.start(username)
                 print("Websites not found for this type")
                 print('\r')
