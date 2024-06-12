@@ -287,6 +287,7 @@
   },
   "BitBucket": {
     "errorType": "status_code",
+    "type":"technology",
     "regexCheck": "^[a-zA-Z0-9-_]{1,30}$",
     "url": "https://bitbucket.org/{}/",
     "urlMain": "https://bitbucket.org/",
@@ -295,12 +296,14 @@
   "BitCoinForum": {
     "errorMsg": "The user whose profile you are trying to view does not exist.",
     "errorType": "message",
+    "type": "forum",
     "url": "https://bitcoinforum.com/profile/{}",
     "urlMain": "https://bitcoinforum.com",
     "username_claimed": "bitcoinforum.com"
   },
   "Bitwarden Forum": {
     "errorType": "status_code",
+    "type": "technology",
     "regexCheck": "^(?![.-])[a-zA-Z0-9_.-]{3,20}$",
     "url": "https://community.bitwarden.com/u/{}/summary",
     "urlMain": "https://bitwarden.com/",
@@ -308,6 +311,7 @@
   },
   "Blogger": {
     "errorType": "status_code",
+    "type": "content_creation",
     "regexCheck": "^[a-zA-Z][a-zA-Z0-9_-]*$",
     "url": "https://{}.blogspot.com",
     "urlMain": "https://www.blogger.com/",
@@ -316,6 +320,7 @@
   "BodyBuilding": {
     "errorType": "response_url",
     "errorUrl": "https://bodyspace.bodybuilding.com/",
+    "type": "fitness",
     "url": "https://bodyspace.bodybuilding.com/{}",
     "urlMain": "https://bodyspace.bodybuilding.com/",
     "username_claimed": "blue"
@@ -329,6 +334,7 @@
   },
   "Bookcrossing": {
     "errorType": "status_code",
+    "type":"literature",
     "url": "https://www.bookcrossing.com/mybookshelf/{}/",
     "urlMain": "https://www.bookcrossing.com/",
     "username_claimed": "blue"
@@ -341,6 +347,7 @@
   },
   "BuyMeACoffee": {
     "errorType": "status_code",
+    "type": "art",
     "regexCheck": "[a-zA-Z0-9]{3,15}",
     "url": "https://buymeacoff.ee/{}",
     "urlMain": "https://www.buymeacoffee.com/",
@@ -349,6 +356,7 @@
   },
   "BuzzFeed": {
     "errorType": "status_code",
+    "type": "news",
     "url": "https://buzzfeed.com/{}",
     "urlMain": "https://buzzfeed.com/",
     "username_claimed": "blue"
@@ -371,18 +379,21 @@
   },
   "CTAN": {
     "errorType": "status_code",
+    "type":"technology",
     "url": "https://ctan.org/author/{}",
     "urlMain": "https://ctan.org/",
     "username_claimed": "briggs"
   },
   "Caddy Community": {
     "errorType": "status_code",
+    "type":"technology",
     "url": "https://caddy.community/u/{}/summary",
     "urlMain": "https://caddy.community/",
     "username_claimed": "taako_magnusen"
   },
   "Car Talk Community": {
     "errorType": "status_code",
+    "type": "vehicles",
     "url": "https://community.cartalk.com/u/{}/summary",
     "urlMain": "https://community.cartalk.com/",
     "username_claimed": "always_fixing"
@@ -390,6 +401,7 @@
   "Carbonmade": {
     "errorType": "response_url",
     "errorUrl": "https://carbonmade.com/fourohfour?domain={}.carbonmade.com",
+    "type": "content_creation",
     "regexCheck": "^[a-zA-Z0-9@_-]$",
     "url": "https://{}.carbonmade.com",
     "urlMain": "https://carbonmade.com/",
@@ -410,6 +422,7 @@
   },
   "Chaos": {
     "errorType": "status_code",
+    "type":"socials",
     "url": "https://chaos.social/@{}",
     "urlMain": "https://chaos.social/",
     "username_claimed": "ordnung"
